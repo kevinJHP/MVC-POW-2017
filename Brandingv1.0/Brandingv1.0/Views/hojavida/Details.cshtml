@@ -1,0 +1,50 @@
+﻿@model Brandingv1._0.Models.hojavida
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+ 
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.institucion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.institucion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.puesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.puesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaini)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaini)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechafin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechafin)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.hojavidaID }) |
+    @Html.ActionLink("volver", "Index")
+</p>

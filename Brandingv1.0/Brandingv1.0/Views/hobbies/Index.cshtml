@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Brandingv1._0.Models.hobbies>
+
+@{
+    ViewBag.Title = "Hobbies";
+}
+
+<h2>Hobbies</h2>
+
+<p>
+    @Html.ActionLink("Crear hobbie", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.hobbie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.hobbie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcion)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.estudiosID }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.estudiosID }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.estudiosID })
+        </td>
+    </tr>
+}
+
+</table>

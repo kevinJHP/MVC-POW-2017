@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Brandingv1._0.Models.hojavida>
+
+@{
+    ViewBag.Title = "Hoja de Vida";
+}
+
+<h2>Hoja de Vida</h2>
+
+<p>
+    @Html.ActionLink("Nuevo trabajo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.institucion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.puesto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaini)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechafin)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.institucion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.puesto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaini)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechafin)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.hojavidaID }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.hojavidaID }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.hojavidaID })
+        </td>
+    </tr>
+}
+
+</table>

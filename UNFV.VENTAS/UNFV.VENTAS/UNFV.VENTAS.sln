@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UNFV.VENTAS", "UNFV.VENTAS\UNFV.VENTAS.csproj", "{C0CD223F-3834-40CD-815D-36097096624F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UNFV.VENTAS.Tests", "UNFV.VENTAS.Tests\UNFV.VENTAS.Tests.csproj", "{73409BC7-45EA-4948-BC01-72A7C348F6EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0CD223F-3834-40CD-815D-36097096624F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0CD223F-3834-40CD-815D-36097096624F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0CD223F-3834-40CD-815D-36097096624F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0CD223F-3834-40CD-815D-36097096624F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73409BC7-45EA-4948-BC01-72A7C348F6EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73409BC7-45EA-4948-BC01-72A7C348F6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73409BC7-45EA-4948-BC01-72A7C348F6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73409BC7-45EA-4948-BC01-72A7C348F6EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

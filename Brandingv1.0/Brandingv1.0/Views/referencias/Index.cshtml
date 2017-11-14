@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Brandingv1._0.Models.referencias>
+
+@{
+    ViewBag.Title = "Referencias";
+}
+
+<h2>Referencias</h2>
+
+<p>
+    @Html.ActionLink("Nuevo Referenciado", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.persona)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.entidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.puesto)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.persona)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.entidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.puesto)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.referenciasID }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.referenciasID }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.referenciasID })
+        </td>
+    </tr>
+}
+
+</table>
